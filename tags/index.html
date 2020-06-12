@@ -1,113 +1,90 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
-
-<title>标签列表 | elvis blog</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://meloL7.github.io/favicon.ico?v=1591951681452">
-<link rel="stylesheet" href="https://meloL7.github.io/styles/main.css">
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-
-    <meta name="description" content="说的多不如做的多">
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://meloL7.github.io">
-        <img src="https://meloL7.github.io/images/avatar.png?v=1591951681452" class="site-logo">
-        <h1 class="site-title">elvis blog</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
+      <head>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+        <meta charset="utf-8">
+        <meta name="referrer" content="never">
+        <title>elvis blog</title>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.11.1/katex.min.css">
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://meloL7.github.io/styles/main.css">
+          <script src="https://meloL7.github.io/media/scripts/mdui.min.js"></script>
+        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Ma+Shan+Zheng&display=swap" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+        <script src="https://meloL7.github.io/media/scripts/script.js"></script>
+        <script >hljs.initHighlightingOnLoad();</script>
         
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="https://meloL7.github.io/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="https://meloL7.github.io/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      说的多不如做的多
-    </div>
-    <div class="site-footer">
-       | <a class="rss" href="https://meloL7.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
 
+    </head>
+    <body class="mdui-theme-primary-purple mdui-theme-accent-purple">
+        <header class="header mdui-m-b-3">
+                          <button class="mdui-btn daohang mdui-btn-icon mdui-btn-dense mdui-color-theme-500 mdui-ripple yinying mdui-m-t-1 mdui-m-l-1" mdui-menu="{target: '#demo-attr-cascade'}"><i class="mdui-icon material-icons">&#xe5d2;</i></button>
+                <ul class="mdui-menu " id="demo-attr-cascade">
+                
+                        <li class="mdui-menu-item">
+                          <a href="/" class="mdui-ripple">首页</a>
+                        </li>
+                
+                        <li class="mdui-menu-item">
+                          <a href="https://meloL7.github.io/archives" class="mdui-ripple">归档</a>
+                        </li>
+                
+                        <li class="mdui-menu-item">
+                          <a href="https://meloL7.github.io/tags" class="mdui-ripple">标签</a>
+                        </li>
+                
+                      </ul>
+                      <div class="mdui-text-center">
+                      <div class="mdui-typo-display-4 mdui-m-b-3 index-title">elvis blog</div>
+                      <div class="mdui-typo-headline">说的多不如做的多</div>
+                      </div>
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
-            
-          </div>
+        </header>
+        <div class="mdui-container">
+                <div class="mdui-row">
+                        <div class="mdui-col-md-10 mdui-col-offset-md-1 ">
+ 
+                            <div class="mdui-row-md-3 mdui-row-xs-1">
+
+                                  </div>
+                         
+                        </div>
+                 </div>
+          
         </div>
-      </div>
-    </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-
-
-
-  </body>
+        <footer class="footer mdui-m-t-5 mdui-text-center">
+               <nav class="social-links">
+                      <ul>
+                      
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                      </ul>
+                    </nav>
+                    <div class="copyright">
+                      <p> <br/> Theme <a href="https://github.com/shanbufun/gridea-theme-jia" target="_blank"  title="佳"  >Jia</a> by <a href="https://shanbu.fun/" target="_blank"  title="山卜方" >Shanbufun</a> </p>
+                  </div>
+              </footer>
+    </body>
 </html>
