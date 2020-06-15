@@ -3,7 +3,7 @@
         <head>
         <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
         <meta charset="utf-8">
-        <title>Hello world | elvis blog</title>
+        <title>MarkDown语法 | elvis blog</title>
         <link rel="stylesheet" href="https://meloL7.github.io/styles/main.css">
         <link rel="stylesheet" href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css">
         <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
@@ -42,14 +42,112 @@
                 <div class="mdui-row">
                         <div class="mdui-col-md-8 mdui-col-offset-md-2 ">
                                 <article class="mdui-p-a-2 post animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="post-title  mdui-m-b-1">Hello world</div>
-                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2020-06-12 15:44:40">2020-06-12 / 1 min read</div>
-                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><p><img src="https://meloL7.github.io/post-images/1591947963387.jpg" alt="" loading="lazy">只是一个测试文章</p>
+                                    <div class="post-title  mdui-m-b-1">MarkDown语法</div>
+                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2020-06-12 15:44:40">2020-06-12 / 2 min read</div>
+                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><p><a href="#anchor">点我跳转</a></p>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<p><strong>这是粗体啊</strong>     使用较多</p>
+<p><s>删除线</s></p>
+<p>超链接：<br>
+欢迎访问<a href="https://blog.csdn.net/witnessai1/article/details/52551362">markdown语法</a></p>
+<p>参考式：<br>
+我经常去访问的几个网站<a href="www.csdn.com" title="CSDN">CSDN</a>、<a href="www.github.com" title="github">github</a></p>
+<p>自动链接：<br>
+&lt; 111&gt;</p>
+<p>引用内容</p>
+<blockquote>
+<p>引用内容1</p>
+<blockquote>
+<p>引用内容2</p>
+<blockquote>
+<p>引用内容3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr>
+<hr>
+<p>无序列表</p>
+<ul>
+<li>一级标题
+<ul>
+<li>二级标题
+<ul>
+<li>三级标题</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>有序列表1</li>
+<li>有序列表2
+<ol>
+<li>次级列表1</li>
+<li>次级列表2</li>
+</ol>
+</li>
+</ol>
+<p>代码块：<br>
+<strong>方法1</strong> 通过&quot;<code>&quot; 开头， &quot;</code>&quot;结尾将代码包裹起来即可<br>
+<strong>方法2</strong> 通过在开头的位置按四次TAB进行首行缩进即可<br>
+<strong>方法3</strong> 内嵌代码块  <code>System.out.println(&quot;just do it &quot;)l</code></p>
+<pre><code>&lt;aop:aspectj-autoproxy proxy-target-class=&quot;true&quot;/&gt;
+	&lt;context:component-scan	base-package=&quot;com.apus.aop,com.powersi,com.busi&quot;/&gt;
+	&lt;!--对web包中的所有类进行扫描，以完成Bean创建和自动依赖注入的功能 --&gt;
+	&lt;context:component-scan	base-package=&quot;com.apus&quot; use-default-filters=&quot;false&quot;&gt;
+		&lt;context:include-filter type=&quot;regex&quot; expression=&quot;.*\.mvc($|\..*)&quot;/&gt;
+	&lt;/context:component-scan&gt;
+
+	&lt;!-- 启动控制层事务 --&gt;	
+	&lt;tx:annotation-driven transaction-manager=&quot;transactionManager&quot;/&gt;
+</code></pre>
+<pre><code>&lt;aop:aspectj-autoproxy proxy-target-class=&quot;true&quot;/&gt;
+&lt;context:component-scan	base-package=&quot;com.apus.aop,com.powersi,com.busi&quot;/&gt;
+&lt;!--对web包中的所有类进行扫描，以完成Bean创建和自动依赖注入的功能 --&gt;
+&lt;context:component-scan	base-package=&quot;com.apus&quot; use-default-filters=&quot;false&quot;&gt;
+	&lt;context:include-filter type=&quot;regex&quot; expression=&quot;.*\.mvc($|\..*)&quot;/&gt;
+&lt;/context:component-scan&gt;
+
+&lt;!-- 启动控制层事务 --&gt;	
+&lt;tx:annotation-driven transaction-manager=&quot;transactionManager&quot;/&gt;
+</code></pre>
+<p>😄  😃</p>
+<h6 id='anchor'></h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">姓名</th>
+<th style="text-align:center">年龄</th>
+<th style="text-align:center">大小</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">张轩</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">17</td>
+</tr>
+<tr>
+<td style="text-align:center">张帅军</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center">25</td>
+</tr>
+<tr>
+<td style="text-align:center">铂金</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
 </div>
                                     <div class="mdui-divider mdui-m-b-2"></div>
                                     <div class="mdui-row-xs-2 post-fenye">
                                        
-                                        <div class="mdui-col"> </div>
+                                        <div class="mdui-col"> <div class="mdui-text-left"><a href="https://meloL7.github.io/tong-guo-grideagithub-da-jian-ge-ren-bo-ke/">通过Gridea+Github搭建个人博客</a></div></div>
                                         
 
                                         
